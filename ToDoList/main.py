@@ -10,7 +10,7 @@ import requests as rq
 
 @asynccontextmanager
 async def lifespan(app_: FastAPI):
-    await init_db
+    await init_db()
     print('All good')
     yield
 
